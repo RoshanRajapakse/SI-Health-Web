@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>siHealth — Investor Pitch</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="sihealth.css">
+</head>
+<body>
+<div id="player">
+  <div class="mesh"></div>
+
+  <!-- TITLE -->
+  <div class="scene scene-title" id="s0">
+    <div class="logo-mark">siHealth</div>
+    <div class="logo-tagline">The all-in-one clinic management platform</div>
+    <div class="title-badge">SI LABS &nbsp;&nbsp;(PVT) LTD </div>
+  </div>
+
+  <!-- FRAGMENTED SPACE -->
+  <div class="scene" id="s1">
+    <div class="scene-fragmented">
+      <div class="frag-eyebrow">The Competitive Landscape</div>
+      <div class="frag-headline">Digital Healthcare in Sri Lanka<br>is a <span>fragmented space.</span></div>
+      <div class="frag-grid">
+        <div class="frag-card">
+          <div class="frag-card-label">Current Solutions</div>
+          <div class="frag-card-title">Appointment &amp; Teleconsult Platforms</div>
+          <ul class="frag-bullets">
+            <li>Transaction-based by design</li>
+            <li>Built for one-time interactions</li>
+            <li>No continuity between visits</li>
+          </ul>
+        </div>
+        <div class="frag-card full-width">
+          <div class="frag-card-label">What they do NOT do</div>
+          <div class="frag-card-title">Critical gaps that siHealth fills</div>
+          <ul class="frag-bullets frag-bullets-grid3">
+            <li class="neg"><strong>Build patient ownership</strong><br><span class="text-13">No persistent patient-clinic relationship</span></li>
+            <li class="neg"><strong>Create longitudinal care</strong><br><span class="text-13">No history, records, or care continuity</span></li>
+            <li class="neg"><strong>Enable ecosystem integration</strong><br><span class="text-13">No true end-to-end clinical workflow</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCREEN SCENES (12) filled by JS -->
+  <div id="screen-scenes"></div>
+
+  <!-- CLOSING -->
+  <div class="scene scene-closing" id="s14">
+    <div class="closing-logo">siHealth</div>
+    <div class="closing-sub">Transforming how clinics operate — from the first booking to the final invoice.</div>
+    <div class="closing-cta">Join us in building the future of healthcare</div>
+    <div class="closing-dots">
+      <div class="closing-dot active"></div>
+      <div class="closing-dot"></div>
+      <div class="closing-dot"></div>
+    </div>
+  </div>
+
+  <div class="watermark">siHealth</div>
+
+  <div id="controls">
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+    <div class="controls-row">
+      <div class="ctrl-btns">
+        <button class="btn" onclick="prevScene()">← Prev</button>
+        <button class="btn btn-play" id="playBtn" onclick="togglePlay()">⏸ Pause</button>
+        <button class="btn" onclick="nextScene()">Next →</button>
+      </div>
+      <div id="dots"></div>
+      <div class="text-right">
+        <div id="scene-label">—</div>
+        <div id="scene-counter">1 / 15</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="sihealth.js"></script>
+</body>
+</html>
